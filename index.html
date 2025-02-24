@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate password</title>
+    <link rel="stylesheet" href="index.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="password-generator">
+    <div class="length-control">
+        <label class="length-label">
+            Довжина паролю: <span class="length-value">8</span>
+            <input type="range"
+                   class="length-slider"
+                   min="6"
+                   max="16"
+                   value="8">
+        </label>
+    </div>
+
+    <div class="password-field">
+        <label class="password-label">
+            <input type="text"
+                   class="password-input"
+                   placeholder="Your password will appear here"
+                   disabled>
+        </label>
+        <button class="copy-btn" aria-label="Copy password">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+        </button>
+    </div>
+
+    <button class="generate-btn">Згенерувати новий пароль</button>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

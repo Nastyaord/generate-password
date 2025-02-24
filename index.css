@@ -1,0 +1,118 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: linear-gradient(180deg, #cdb0c1, #f8c4cc) no-repeat 0 0/100% 100%;
+}
+
+:root {
+    --primary-color: #e0a8b0;
+    --hover-color: #d48a96;
+    --icon-color: #c76b7e;
+    --text-color: #fff;
+    --dark-color-brown: #471927;
+    --border-radius: 8px;
+    --box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.2s;
+}
+
+.password-generator {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.password-generator .password-field {
+    display: flex;
+    justify-content: center;
+}
+
+.password-generator .password-field .password-label,
+.password-generator .password-field .password-input {
+    display: flex;
+    width: 100%;
+}
+
+.password-generator .copy-btn {
+    background: none;
+    border: none;
+    color: var(--icon-color);
+    cursor: pointer;
+    opacity: 0.8;
+    /*transition: opacity var(--transition-speed);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-generator .copy-btn:hover {
+    opacity: 1;
+}
+
+.password-generator .length-control {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.password-generator .length-control .length-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color-brown);
+    font-weight: 500;
+}
+
+.password-generator .length-control .length-value {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.password-generator .length-control .length-slider {
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    appearance: none;
+    outline: none;
+}
+
+.password-generator .length-control .length-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background var(--transition-speed);
+}
+
+.password-generator .length-control .length-slider::-webkit-slider-thumb:hover {
+    background: var(--hover-color);
+}
+
+.password-generator .generate-btn {
+    background: var(--primary-color);
+    color: var(--dark-color-brown);
+    border: none;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition-speed);
+}
+
+.password-generator .generate-btn:hover {
+    background: var(--hover-color);
+}
