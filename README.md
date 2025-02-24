@@ -2,6 +2,7 @@
 
 
 Simple, secure, and stylish password generator with a clean interface.
+
 🔐 Features
 
 - generate strong random passwords
@@ -17,4 +18,5 @@ Simple, secure, and stylish password generator with a clean interface.
 - fully customizable through CSS variables
 
 📱 Browser Support
+
 Works in all modern browsers - Chrome, Firefox, Safari, and Edge.
