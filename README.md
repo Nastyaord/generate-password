@@ -1,4 +1,6 @@
 ✨ Password Generator ✨
+
+
 Simple, secure, and stylish password generator with a clean interface.
 🔐 Features
 
